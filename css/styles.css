@@ -1,0 +1,251 @@
+/*Globales*/
+* {
+    font-family: 'Comic Neue', cursive;
+}
+li { 
+    list-style: none;
+}
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.col1 {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    align-items: center;
+    margin:20px;
+}
+.col2 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin:20px 80px 20px 20px ;
+}
+.coltitle{
+    background-color: rgb(51, 51, 51);
+    color:white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 10px;
+}
+.coltitle h2 {
+    margin-top:0;
+    margin-bottom: 0;
+    margin-left:20px;
+}
+/*CSS NavBar*/
+.nav{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+
+}
+.nav-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    margin-left: 50px;
+}
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 4;
+    list-style: none;
+}
+#cerrar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 50px;
+}
+button {
+    color:white;
+    background-color: rgb(33, 165, 187);
+    box-shadow: black 5px 5px 5px;
+}
+.nav-links li{
+    margin: 5px;
+    color: white;
+}
+.nav-links a:link, a:visited, a:active {
+    color: white;
+    text-decoration: none;
+}
+.nav-links a:hover{
+    color: gray;
+}
+button:hover{
+    color: black;
+}
+/*Profile*/
+.contenedorPrincipal{
+    border: 1px grey solid;
+    display:flex;
+    flex-direction: column;
+    width: 650px;
+}
+.header {
+    background-color: rgb(23, 162, 184);
+    height: 70px;
+}
+.header > img {
+    width: 60px;
+    position: relative;
+    top: 40px;
+    /*para que el borde sea circular*/
+    border:3px solid grey;
+    border-radius:50%;
+    padding: 1px;
+    background-color: white;
+    /*separación*/
+    left:20px;
+}
+.tarjetaInformacion{
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.iconoUbicacion{
+    width: 10px;
+}
+.tarjetaInformacion h2{
+    margin-block: 0;
+}
+.editarPerfil {
+    vertical-align: 15px;
+}
+.editarPerfil > img {
+    width: 20px;
+}
+.skillset{
+    margin-bottom: 5px;
+}
+
+.tituloUniversitario{
+    margin-top: 0;
+}
+.ciudad, .linkEditar{
+    vertical-align: 3px;
+}
+.editarPerfil a:link, a:visited, a:active {
+    color: blue;
+    text-decoration: underline;
+}
+.editarPerfil a:hover{
+    color: gray;
+}
+
+/*Education*/
+.education {
+    border: 1px grey solid;
+    width: 650px;
+    margin:20px;
+}
+.educationText p {
+    padding: 5px 0px 5px 30px;
+}
+.edTitle {
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 0;
+}
+.edDate {
+    font-size: 15px;
+    color: gray;
+    margin: 0;
+}
+.edMisc {
+    font-size: 18px;
+    margin: 0;
+}
+/*Connection Request*/
+.connRequest{
+    display:flex;
+    flex-direction: column;
+    border: 1px grey solid;
+}
+
+/*Your Connections*/
+.yourConn {
+    border: 1px grey solid;
+    margin-top: 20px;
+}
+.icon img{
+    width:10px;
+}
+.viewMore{
+    border: 1px grey solid;
+    padding: 10px;
+}
+.viewMore a{
+    color: black;
+}
+.viewMore a:link, a:visited, a:active {
+    color: blue;
+    text-decoration: underline;
+}
+.viewMore a:hover{
+    color: gray;
+}
+#profimg {
+    width:30px;
+}
+#icon{
+    width:30px;
+    margin:5px;
+}
+#prof-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin:5px;
+}
+#prof-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin:5px;
+}
+.circle{
+    background-color: lightgrey;
+    color: black;
+    border-radius: 50%;
+    width: 40px;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+#prof-1 p{
+    padding-left: 15px;
+    margin-block: 0;
+}
+#prof-2 p{
+    padding-left: 15px;
+    margin-block: 0;
+}
+.actioncircles{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.nameConnection{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Perfil</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Fuente Balsamiq-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <div class="nav">
+        <h1 class="nav-title">Profile</h1>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">My Profile</a></li>
+            <li><a href="#">Find Connections</a></li>
+        </ul>
+            <div id="cerrar">
+                <li><button class="btn">Sign Out</button></li>
+            </div>
+    </div>
+    <div id="main">
+    <div class="col1">
+    <!--Perfil-->
+    <div class="contenedorPrincipal">
+        <div class="header">
+            <img src="icons/user-circle.png" alt="imagen de usuario"/>
+        </div>
+        <div class="tarjetaInformacion">
+            <h2 class="nombre">Jane Doe</h2>
+            <div class="ubicacion">
+                <img class="iconoUbicacion"src="icons/map-marker.png" alt="localizacion"/>
+                <span class="ciudad">Seattle</span>
+            </div>
+            <div>
+                <p>Developer | Engineer | Problem Solver</p>
+                <p>Master of the shadows and the Internet</p>
+            </div>
+            <div class="editarPerfil">
+                <img src="icons/gear.png" alt="icono edición"/>
+                <a class="linkEditar" href="#">edit profile</a>
+            </div>
+        </div>
+    </div>
+    <!--Education-->
+    <div class="education">
+        <div class="coltitle">
+            <h2>Education</h2>
+        </div>
+        <div class="educationText">
+            <p class="edTitle">Coding Dojo - Full Stack Bootcamp</p>
+            <p class="edDate">Dec 2019 - Mar 2020</p>
+            <p class="edMisc">Triple Black belt in Python, MERN and C#</p>
+        </div>
+    </div>
+    <!--Fin div col1-->
+    </div>
+    <!--col-->
+    <div class="col2">
+    <!--Connection Requests-->
+    <div class="connRequest">
+        <div class="coltitle">
+            <div class="circle"> <p>2</p> </div>
+            <h2>Connection Requests</h2>
+        </div>
+        <div>
+            <div id="prof-1">
+                <div class="nameConnection">
+                    <img id="profimg" src="icons/user-circle.png" alt="profile picture">
+                    <p id="names">Todd E</p>
+                </div>
+                <div class="actioncircles">
+                    <img id="icon"src="./icons/accept-circle.png" alt="accept-circle">
+                    <img id="icon"src="./icons/close-circle.png" alt="close-circle">
+                </div>
+            </div>
+            <div id="prof-1">
+                <div class="nameConnection">
+                    <img id="profimg" src="icons/user-circle.png" alt="profile picture">
+                    <p id="names">Phil K</p>
+                </div>
+                <div class="actioncircles">
+                    <img id="icon"src="./icons/accept-circle.png" alt="accept-circle">
+                    <img id="icon"src="./icons/close-circle.png" alt="close-circle">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Your Connections-->
+    <div class="yourConn">
+        <div class="coltitle">
+            <div class="circle"> <p>500+</p> </div>
+            <h2>Your Connections</h2>
+        </div>
+        <div>
+            <div id="prof-2">
+                <img id="profimg" src="icons/user-circle.png" alt="profile picture">
+                <p id="names">Adrien D</p>
+            </div>
+            <div id="prof-2">
+                <img id="profimg" src="icons/user-circle.png" alt="profile picture">
+                <p id="names">Anne J</p>
+            </div>
+            <div id="prof-2">
+                <img id="profimg" src="icons/user-circle.png" alt="profile picture">
+                <p id="names">Alayne T</p>
+            </div>
+            <div id="prof-2">
+                <img id="profimg" src="icons/user-circle.png" alt="profile picture">
+                <p id="names">Arry Y</p>
+            </div>
+            <div class="viewMore">
+                <a class="linkEditar" href=>View More</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--Fin div main-->
+    </div>
+</body>
+</html>
