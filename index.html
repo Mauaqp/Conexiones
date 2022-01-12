@@ -43,7 +43,7 @@
             </div>
             <div class="editarPerfil">
                 <img src="icons/gear.png" alt="icono edición"/>
-                <a class="linkEditar" href="#">edit profile</a>
+                <a class="linkEditar" onclick="changeName(this)">edit profile</a>
             </div>
         </div>
     </div>
@@ -65,28 +65,28 @@
     <!--Connection Requests-->
     <div class="connRequest">
         <div class="coltitle">
-            <div class="circle"> <p>2</p> </div>
+            <div class="circle" id="requests"> <span><p>2</p></span> </div>
             <h2>Connection Requests</h2>
         </div>
         <div>
             <div id="prof-1">
-                <div class="nameConnection">
+                <div class="nameConnection" id="request-1">
                     <img id="profimg" src="icons/user-circle.png" alt="profile picture">
                     <p id="names">Todd E</p>
                 </div>
                 <div class="actioncircles">
-                    <img id="icon"src="./icons/accept-circle.png" alt="accept-circle">
-                    <img id="icon"src="./icons/close-circle.png" alt="close-circle">
+                    <img id="icon"src="./icons/accept-circle.png" alt="accept-circle" onclick='acceptReq("#request-1")'>
+                    <img id="icon"src="./icons/close-circle.png" alt="close-circle" onclick="removeReq(this)">
                 </div>
             </div>
             <div id="prof-1">
-                <div class="nameConnection">
+                <div class="nameConnection" id="request-2">
                     <img id="profimg" src="icons/user-circle.png" alt="profile picture">
                     <p id="names">Phil K</p>
                 </div>
                 <div class="actioncircles">
-                    <img id="icon"src="./icons/accept-circle.png" alt="accept-circle">
-                    <img id="icon"src="./icons/close-circle.png" alt="close-circle">
+                    <img id="icon"src="./icons/accept-circle.png" alt="accept-circle" onclick='acceptReq("#request-2")'>
+                    <img id="icon"src="./icons/close-circle.png" alt="close-circle" onclick="removeReq(this)">
                 </div>
             </div>
         </div>
@@ -94,7 +94,7 @@
     <!--Your Connections-->
     <div class="yourConn">
         <div class="coltitle">
-            <div class="circle"> <p>500+</p> </div>
+            <div class="circle" id="connections"> <span><p>500</p></span></div>
             <h2>Your Connections</h2>
         </div>
         <div>
@@ -121,6 +121,7 @@
     </div>
     </div>
     <!--Fin div main-->
+    <script src="js/script.js"></script>
     </div>
 </body>
 </html>
